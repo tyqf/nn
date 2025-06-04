@@ -166,8 +166,8 @@ print("第二十四题：\n")
 x = np.arange(0, 100, 0.1) #生成从0到99.9的数组，步长为 0.1，共 1000 个点 （注：np.arange() 遵循的是左闭右开原则）
 y = x * x #计算每个 x 对应的y=x^2 的值
 
-plt.figure(figsize=(10, 6))  # 创建一个宽 10 英寸、高 6 英寸的图像窗口
-plt.plot(x, y, label="y = x^2", color="blue")  # 制蓝色曲线，并设置图例标签为y = x^2
+plt.figure(figsize = (10, 6))  # 创建一个宽 10 英寸、高 6 英寸的图像窗口
+plt.plot(x, y, label = "y = x^2", color = "blue")  # 制蓝色曲线，并设置图例标签为y = x^2
 
 # 添加标题和标签
 plt.title("Plot of y = x^2")  # 图像标题
@@ -178,7 +178,7 @@ plt.ylabel("y")  # y 轴标签
 plt.grid(True)
 
 # 在右上角显示图例
-plt.legend(loc='upper right')
+plt.legend(loc = 'upper right')
 
 plt.show() #显示绘制的图像
 
@@ -189,7 +189,7 @@ x = np.arange(0, 3 * np.pi, 0.1)  ## 生成从0到3π 的x值，步长为0.1
 y_sin = np.sin(x)  # 计算对应的正弦值
 y_cos = np.cos(x)  # 计算对应的余弦值
 
-plt.figure(figsize=(10, 6))  # # 创建一个图像窗口，设置大小为10×6英寸 
+plt.figure(figsize = (10, 6))  # # 创建一个图像窗口，设置大小为10×6英寸 
 plt.plot(x, y_sin, label="y = sin(x)", color="blue")  # 绘制正弦函数曲线
 plt.plot(x, y_cos, label="y = cos(x)", color="red") # 绘制余弦函数曲线
 
